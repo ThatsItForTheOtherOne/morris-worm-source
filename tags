@@ -1,0 +1,47 @@
+Mmain	main.c	/^main(argc, argv)$/
+XS	xs.c	/^XS(s, n)$/
+a2in	xs.c	/^a2in(n)$/
+checkother	checkother.c	/^checkother()$/
+compkeys	compkeys.c	/^compkeys(a4, direction)$/
+crack_0	cracksome.c	/^crack_0()$/
+crack_1	cracksome.c	/^crack_1()$/
+crack_2	cracksome.c	/^crack_2()$/
+crack_3	cracksome.c	/^crack_3()$/
+cracksome	cracksome.c	/^cracksome()$/
+def_netmask	if_init.c	/^def_netmask(a4)$/
+des	des.c	/^des(a4)$/
+doit	main.c	/^doit()$/
+feed_shell	waithit.c	/^feed_shell(fd, s)$/
+getaddrs	host.c	/^getaddrs(a4)$/
+getobjectbyname	misc.c	/^getobjectbyname(s)$/
+h_addaddr	host.c	/^h_addaddr(a4, a8)$/
+h_addname	host.c	/^h_addname(a4, name)$/
+h_addr2host	host.c	/^h_addr2host(addr, insert)$/
+h_clean	host.c	/^h_clean()$/
+h_name2host	host.c	/^h_name2host(name, insert)$/
+ha	hg.c	/^ha()$/
+hg	hg.c	/^hg()$/
+hi	hg.c	/^hi()$/
+hl	hg.c	/^hl()$/
+hu1	hu1.c	/^hu1(a4, a8, ac)$/
+if_init	if_init.c	/^if_init()$/
+justreturn	misc.c	/^justreturn()$/
+loadobject	loadobject.c	/^loadobject(a4)$/
+makemagic	makemagic.c	/^makemagic(a4, a8, ac, a10, a14)$/
+netmaskfor	if_init.c	/^netmaskfor(a4)$/
+other_sleep	other_sleep.c	/^other_sleep(a4)$/
+other_sleep_func	other_sleep.c	/^other_sleep_func()$/
+pipe_to_rsh	waithit.c	/^pipe_to_rsh(host, inp, outp, cmd)$/
+resynch	waithit.c	/^resynch(fd, shell_fd, sleeptime)$/
+rt_init	rt_init.c	/^rt_init()$/
+rt_init_func	rt_init.c	/^rt_init_func()$/
+run_l1	waithit.c	/^run_l1(,fpipe, , port, maybe_magic)$/
+s_12fc	hg.c	/^s_12fc(a4)$/
+s_1638	hg.c	/^s_1638(a4)$/
+s_1776	hg.c	/^s_1776(a4, a8, ac)$/
+send_message	main.c	/^send_message()$/
+setupE	setupE.c	/^setupE()$/
+wait_for_string	waithit.c	/^wait_for_string(fd, buf, sleeptime)$/
+waithit	waithit.c	/^waithit(muckp,,,magic, wfd)$/
+xorbuf	misc.c	/^xorbuf(a4, a8)$/
+xread	misc.c	/^xread(a4, a8, ac, a10)$/
