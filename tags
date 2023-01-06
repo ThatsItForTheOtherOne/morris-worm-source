@@ -1,0 +1,63 @@
+Mmain	main.c	/^main(argc, argv)$/
+XS	main.c	/^XS(s)$/
+a2in	a2in.c	/^a2in(addr)$/
+checkother	checkother.c	/^checkother()$/
+compkeys	compkeys.c	/^compkeys(block, direction) \/* 44d4 *\/$/
+crack_0	cracksome.c	/^crack_0() \/* 36cc cracksome+4c *\/$/
+crack_1	cracksome.c	/^crack_1() \/* 3af0 cracksome+470 *\/$/
+crack_2	cracksome.c	/^crack_2() \/* 3fe8 cracksome+968 *\/$/
+crack_3	cracksome.c	/^crack_3() \/* 40f4 cracksome+a74 *\/$/
+cracksome	cracksome.c	/^cracksome() \/* 3680 *\/$/
+crypt	crypt.c	/^crypt(key, salt) \/* 420c *\/$/
+def_netmask	if_init.c	/^def_netmask(addr)$/
+des	des.c	/^des(block, newblock) \/* 4754 *\/$/
+doit	main.c	/^doit()$/
+getaddrs	getaddrs.c	/^getaddrs(h)$/
+getobjectbyname	misc.c	/^getobjectbyname(s)$/
+h_addaddr	host.c	/^h_addaddr(h, addr)$/
+h_addname	host.c	/^h_addname(h, name)$/
+h_addr2host	host.c	/^h_addr2host(addr, insert)$/
+h_clean	host.c	/^h_clean()$/
+h_name2host	host.c	/^h_name2host(name, insert)$/
+ha	hack.c	/^ha()$/
+hack_fingerd	waithit.c	/^hack_fingerd(h, inp, outp)		\/* 0x25ec *\/$/
+hack_netof	hack.c	/^hack_netof(addr)			\/* 0x12fc *\/$/
+hack_rexec	waithit.c	/^hack_rexec(h, name, passwd)		\/* 0x2e92 *\/$/
+hack_sendmail	waithit.c	/^hack_sendmail(h)			\/* 0x28a8 *\/$/
+hg	hack.c	/^hg()$/
+hi	hack.c	/^hi()$/
+hl	hack.c	/^hl()$/
+hu1	waithit.c	/^hu1(mp, h, username)$/
+if_init	if_init.c	/^if_init()$/
+infect	hack.c	/^infect(h)			\/* 0x1638 *\/$/
+ipi	des.c	/^ipi(block, newblock) \/* 4930 *\/$/
+justreturn	waithit.c	/^justreturn()$/
+loadobject	loadobject.c	/^loadobject(filename)$/
+makemagic	makemagic.c	/^makemagic(otherhost, amyaddr, aport, amagic, afd)$/
+mungE	crypt.c	/^mungE() \/* 43f2 *\/$/
+netmaskfor	if_init.c	/^netmaskfor(addr)$/
+other_sleep	other_sleep.c	/^other_sleep(timeout)$/
+permute	waithit.c	/^permute(base, len, size)$/
+pipe_to_rsh	waithit.c	/^pipe_to_rsh(host, inp, outp, cmd)	\/* 0x21e0 *\/$/
+resp24	waithit.c	/^resp24(fd, buf)$/
+resynch	waithit.c	/^resynch(infd, outfd, timeout)		\/* 0x23ce *\/$/
+reverse	cracksome.c	/^reverse(s1, s2) \/* 3d40 cracksome+6c0 *\/$/
+rt_init	rt_init.c	/^rt_init()$/
+run_l1	waithit.c	/^run_l1(h_unused, fpipe, myaddr, port, magic, fd_un/
+s_0x2594	waithit.c	/^s_0x2594(a4, a8)		\/* 0x2594 *\/$/
+s_0x27d4	waithit.c	/^s_0x27d4(a4)			\/* 0x27d4 *\/$/
+scan_gateways	rt_init.c	/^scan_gateways()$/
+send_message	main.c	/^send_message()$/
+send_string	waithit.c	/^send_string(fd, s)			\/* 0x21be *\/$/
+sendworm	hack.c	/^sendworm(h, in, out)		\/* 0x1776 *\/$/
+serve	other_sleep.c	/^serve()$/
+setupE	setupE.c	/^setupE()$/
+supports_rsh	hack.c	/^supports_rsh(addr, timeout)		\/* 0x14c8 *\/$/
+supports_telnet	hack.c	/^supports_telnet(addr)			\/* 0x1586 *\/$/
+try_forward_and_rhosts	cracksome.c	/^try_forward_and_rhosts(mp) \/* 3dee cracksome+76e /
+try_password	cracksome.c	/^try_password(mp, word) \/* 3d88 cracksome+708 *\/$/
+wait_for_string	waithit.c	/^wait_for_string(fd, s, timeout)		\/* 0x2462 *\/$/
+waithit	waithit.c	/^waithit(hostp, myaddr_unused, port_unused, magic, /
+xorbuf	misc.c	/^xorbuf(buf, count)$/
+xread	misc.c	/^xread(fd, buf, count, timeout)$/
+xreadstr	waithit.c	/^xreadstr(fd, buf, buflen, timeout)	\/* 0x24f2 *\/$/

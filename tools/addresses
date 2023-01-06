@@ -1,0 +1,63 @@
+0054	main.c	main
+0252	main.c	doit *
+0346	main.c	XS
+03dc	main.c	send_message *
+0480	if_init.c	if_init
+0812	if_init.c	def_netmask
+0860	if_init.c	netmaskfor
+08c2	rt_init.c	rt_init
+0aca	rt_init.c	scan_gateways *
+0cec	getaddrs.c	getaddrs
+0e2a	a2in.c	a2in
+0e50	host.c	h_addr2host
+0efc	host.c	h_name2host
+0fba	host.c	h_addaddr
+1014	host.c	h_addname
+107a	host.c	h_clean
+10e4	hack.c	hg
+1134	hack.c	ha
+123a	hack.c	hl
+12ba	hack.c	hi
+12fc	hack.c	hack_netof *
+14c8	hack.c	supports_rsh *
+1586	hack.c	supports_telnet *
+1638	hack.c	infect *
+1776	hack.c	sendworm *
+1a02	makemagic.c	makemagic
+1bb2	waithit.c	waithit
+2014	waithit.c	run_l1 *
+21be	waithit.c	feed_shell *
+21e0	waithit.c	pipe_to_rsh *
+23ce	waithit.c	resynch *
+2462	waithit.c	wait_for_string *
+24e4	waithit.c	justreturn
+24f2	waithit.c	xreadstr *
+2594	waithit.c	s_0x2594 *
+25ec	waithit.c	hack_fingerd *
+27d4	waithit.c	s_0x27d4 *
+2814	waithit.c	permute
+28a8	waithit.c	hack_sendmail *
+2c26	waithit.c	resp24
+2ca0	waithit.c	hu1
+2e92	waithit.c	hack_rexec *
+3054	loadobject.c	loadobject
+3180	misc.c	getobjectbyname
+31c6	misc.c	xorbuf
+320c	checkother.c	checkother
+3400	other_sleep.c	other_sleep
+34be	other_sleep.c	serve *
+3606	misc.c	xread
+3680	cracksome.c	cracksome
+36cc	cracksome.c	crack_0 *
+3af0	cracksome.c	crack_1 *
+3d40	cracksome.c	reverse *
+3d88	cracksome.c	try_password *
+3dee	cracksome.c	try_forward_and_rhosts *
+3fe8	cracksome.c	crack_2 *
+40f4	cracksome.c	crack_3 *
+420c	crypt.c	crypt
+43f2	crypt.c	mungE
+44d4	compkeys.c	compkeys
+4624	setupE.c	setupE
+4754	des.c	des
+4930	des.c	ipi
